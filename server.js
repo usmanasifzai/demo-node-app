@@ -1,4 +1,5 @@
 import express from 'express';
+import appRouter from './routers/AppRouter.js';
 
 class Server {
   app;
@@ -15,6 +16,7 @@ class Server {
   }
 
   routerConfig() {
+    this.app.use(appRouter);
   }
 
   start(port) {

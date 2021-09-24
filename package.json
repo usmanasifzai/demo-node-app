@@ -1,0 +1,19 @@
+{
+  "name": "demo-node-app",
+  "version": "1.0.0",
+  "description": "A demo node app using express with two endpoints to get a static html with an input field for data and POST that data and display the reversed string in a div",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usmanasifzai/demo-node-app.git"
+  },
+  "author": "Usman Asif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usmanasifzai/demo-node-app/issues"
+  },
+  "homepage": "https://github.com/usmanasifzai/demo-node-app#readme"
+}

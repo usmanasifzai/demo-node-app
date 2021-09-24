@@ -1,10 +1,12 @@
 {
   "name": "demo-node-app",
   "version": "1.0.0",
-  "description": "A demo node app using express with two endpoints to get a static html with an input field for data and POST that data and display the reversed string in a div",
+  "description": "A demo node app using express with two endpoints to take user input and render it as a reversed string in a static html",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/usmanasifzai/demo-node-app/issues"
   },
-  "homepage": "https://github.com/usmanasifzai/demo-node-app#readme"
+  "homepage": "https://github.com/usmanasifzai/demo-node-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }

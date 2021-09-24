@@ -1,10 +1,12 @@
+import reverseString from '../utils/reverseString.js';
+
 class AppController {
   async app(req, res) {
-    res.status(200).json({ message: 'Hello World!' });
+    res.sendFile('/app.html', { root: './public' });
   }
 
   async data(req, res) {
-    res.status(200).json({ response: 'Hello World!' });
+    res.status(200).json({ data: reverseString(req.body.dataField) });
   }
 }
 

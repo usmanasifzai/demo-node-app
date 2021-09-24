@@ -13,6 +13,7 @@ class Server {
   config() {
     this.app.use(express.urlencoded({ extended:true }));
     this.app.use(express.json({ limit: '1mb' }));
+    this.app.use(express.static('./public'));
   }
 
   routerConfig() {

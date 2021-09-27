@@ -1,11 +1,11 @@
 import reverseString from '../utils/reverseString.js';
 
 class AppController {
-  async app(req, res) {
+  app(req, res) {
     res.sendFile('/app.html', { root: './public' });
   }
 
-  async data(req, res) {
+  data(req, res) {
     res.status(200).json({ data: reverseString(req.body.dataField) });
   }
 }
